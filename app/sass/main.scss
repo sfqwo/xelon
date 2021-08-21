@@ -51,7 +51,7 @@
   overflow: hidden;
   &__header {
     width: 100%;
-    margin-bottom: 150px;
+    height: 20%;
     &-menu {
       float: right;
       margin: 2vw 5vw;
@@ -100,7 +100,7 @@
   &__menu{
     height: 50%;
     display: flex;
-    margin: 10% 0;
+    margin: 2% 0;
     @include flex-column;
     &-item{
       width: 30vw;
@@ -177,13 +177,13 @@
   width: 100% !important;
   &__wrap{
    @include flex-row;
-    margin:0 auto;
     width: 100% !important;
+    margin: 0 auto;
     &-item{
-      display: flex;
+      width: 100% !important;
+      display: flex; 
       justify-content: center;
       margin: 2% auto;
-      width: 100% !important;
       font-size: 16px;
       line-height: 20px;
       color: #BCBCBC;
