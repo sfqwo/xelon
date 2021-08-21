@@ -1,0 +1,23 @@
+{
+  "name": "ultratop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sfqwo",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-real-favicon": "^0.3.2",
+    "gulp-rev-all": "^3.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "sass": "^1.37.5"
+  }
+}
