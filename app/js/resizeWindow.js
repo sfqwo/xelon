@@ -20,12 +20,6 @@ function reformFooter() {
     document.querySelector(".w-page__footer-wrap").innerHTML = html;
 }
 
-function reScale(elName, max, min) {
-    let width = document.documentElement.clientWidth;
-    document.querySelectorAll(elName).forEach(el => el.style.width = (width / pageWidth) * (max - min) + min + "px");
-    console.log(document.querySelector(elName).style.width);
-}
-
 function setSize() {
     ["onload", "onresize"].forEach(el => window[el] = function () {
         document.getElementsByClassName("w-page")[0].style.width = document.documentElement.clientWidth + "px";
@@ -33,11 +27,8 @@ function setSize() {
         document.getElementsByClassName("w-page")[1].style.width = document.documentElement.clientWidth + "px";
         document.getElementsByClassName("w-page")[1].style.height = document.documentElement.clientHeight + "px";
         reformFooter();
-        reScale(".w-page__header-logo", 160, 100);
-        reScale(".w-page__header-menu", 50, 30);
     })
 };
 
-let pageWidth = window.screen.width;
 setSize();
 
